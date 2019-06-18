@@ -2,7 +2,7 @@ formula:
   circuitBreaker:
     rules:
       - ruleId: 1
-        enabled: true
+        enabled: false
         source:
           tags:
             - type: system
