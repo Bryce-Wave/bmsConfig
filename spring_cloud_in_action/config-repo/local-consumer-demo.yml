@@ -35,12 +35,12 @@ formula:
             - type: system
               key: EM_APP
               value:
-                - app-0t5R2M6D
+                - app-0t5R2M6D123
               op: NOT_IN
             - type: system
               key: EM_PLATFORM
               value:
-                - d-G6tEsKGH
+                - d-G6tEsKGH123
               op: NOT_IN
         serviceName: provider-demo
         effectiveType: 1
