@@ -9,12 +9,12 @@ formula:
               key: EM_APP
               value:
                 - app-0t5R2M6D
-              op: EQUAL
+              op: NOT_IN
             - type: system
               key: EM_PLATFORM
               value:
                 - d-G6tEsKGH
-              op: IN
+              op: NOT_IN
         serviceName: provider-demo
         effectiveType: 1
         effectivePattren: "*ALL_WAY*"
