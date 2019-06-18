@@ -19,7 +19,7 @@ formula:
         effectiveType: 1
         effectivePattren: "*ALL_WAY*"
         effectiveLocation: "*ALL*"
-        forceOpen: false
+        forceOpen: true
         ringBufferSizeInClosedState: 2
         ringBufferSizeInHalfOpenState: 2
         failureRateThreshold: 51
