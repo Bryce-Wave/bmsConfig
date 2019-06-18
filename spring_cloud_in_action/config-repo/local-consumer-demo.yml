@@ -47,10 +47,10 @@ formula:
         effectivePattren: GET
         effectiveLocation: "*ALL*"
         forceOpen: false
-        ringBufferSizeInClosedState: 2
-        ringBufferSizeInHalfOpenState: 2
-        failureRateThreshold: 51
-        waitDurationInOpenState: 60000
+        ringBufferSizeInClosedState: 5
+        ringBufferSizeInHalfOpenState: 5
+        failureRateThreshold: 60
+        waitDurationInOpenState: 10000
         fallbackType: 1
         fallbackResult: ''
         timeoutDuration: -1
