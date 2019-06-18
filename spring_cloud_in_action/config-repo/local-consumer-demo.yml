@@ -28,30 +28,3 @@ formula:
         fallbackResult: ''
         timeoutDuration: -1
         cancelRunningFuture: true
-      - ruleId: 2
-        enabled: true
-        source:
-          tags:
-            - type: system
-              key: EM_APP
-              value:
-                - app-0t5R2M6D
-              op: NOT_IN
-            - type: system
-              key: EM_PLATFORM
-              value:
-                - d-G6tEsKGH
-              op: NOT_IN
-        serviceName: provider-demo
-        effectiveType: 1
-        effectivePattren: GET
-        effectiveLocation: "*ALL*"
-        forceOpen: false
-        ringBufferSizeInClosedState: 2
-        ringBufferSizeInHalfOpenState: 2
-        failureRateThreshold: 51
-        waitDurationInOpenState: 60000
-        fallbackType: 1
-        fallbackResult: ''
-        timeoutDuration: -1
-        cancelRunningFuture: true
