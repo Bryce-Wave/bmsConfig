@@ -72,7 +72,7 @@ formula:
         serviceName: provider-demo
         effectiveType: 1
         effectivePattren: GET
-        effectiveLocation: "\hello"
+        effectiveLocation: "/hello"
         forceOpen: false
         ringBufferSizeInClosedState: 2
         ringBufferSizeInHalfOpenState: 2
