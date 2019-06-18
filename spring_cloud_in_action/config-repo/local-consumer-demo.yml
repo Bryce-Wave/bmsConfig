@@ -2,7 +2,7 @@ formula:
   circuitBreaker:
     rules:
       - ruleId: 1
-        enabled: false
+        enabled: true
         source:
           tags:
             - type: system
@@ -56,7 +56,7 @@ formula:
         timeoutDuration: -1
         cancelRunningFuture: true
       - ruleId: 4
-        enabled: true
+        enabled: false
         source:
           tags:
             - type: system
