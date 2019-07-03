@@ -6,11 +6,11 @@ formula:
       effectivePattren: '*ALL_WAY*'
       effectiveType: 1
       enabled: true
-      failureRateThreshold: 60
+      failureRateThreshold: 50
       fallbackResult: ''
       fallbackType: 1
-      forceOpen: false
-      ringBufferSizeInClosedState: 30
+      forceOpen: true
+      ringBufferSizeInClosedState: 20
       ringBufferSizeInHalfOpenState: 10
       ruleId: 54
       serviceName: '*ALL_SERVICE_NAME*'
@@ -22,4 +22,4 @@ formula:
           value:
           - app-XZ8dbMgW
       timeoutDuration: -1
-      waitDurationInOpenState: 10000
+      waitDurationInOpenState: 5000
