@@ -1,30 +1,25 @@
 formula:
   circuitBreaker:
     rules:
-      - ruleId: 1
-        enabled: false
-        source:
-          tags:
-            - type: system
-              key: EM_APP
-              value:
-                - app-0t5R2M6D
-              op: NOT_IN
-            - type: system
-              key: EM_PLATFORM
-              value:
-                - d-G6tEsKGH
-              op: NOT_IN
-        serviceName: provider-demo
-        effectiveType: 1
-        effectivePattren: "*ALL_WAY*"
-        effectiveLocation: "*ALL*"
-        forceOpen: true
-        ringBufferSizeInClosedState: 2
-        ringBufferSizeInHalfOpenState: 2
-        failureRateThreshold: 51
-        waitDurationInOpenState: 60000
-        fallbackType: 1
-        fallbackResult: ''
-        timeoutDuration: -1
-        cancelRunningFuture: true
+    - cancelRunningFuture: true
+      effectiveLocation: '*ALL*'
+      effectivePattren: '*ALL_WAY*'
+      effectiveType: 1
+      enabled: true
+      failureRateThreshold: 50
+      fallbackResult: ''
+      fallbackType: 1
+      forceOpen: true
+      ringBufferSizeInClosedState: 20
+      ringBufferSizeInHalfOpenState: 10
+      ruleId: 54
+      serviceName: '*ALL_SERVICE_NAME*'
+      source:
+        tags:
+        - key: EM_APP
+          op: EQUAL
+          type: SYSTEM
+          value:
+          - app-XZ8dbMgW
+      timeoutDuration: -1
+      waitDurationInOpenState: 5000
