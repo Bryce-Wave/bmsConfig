@@ -9,7 +9,7 @@ formula:
       failureRateThreshold: 50
       fallbackResult: ''
       fallbackType: 1
-      forceOpen: false
+      forceOpen: true
       ringBufferSizeInClosedState: 20
       ringBufferSizeInHalfOpenState: 10
       ruleId: 1
