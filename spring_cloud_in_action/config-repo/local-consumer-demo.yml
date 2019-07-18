@@ -1,9 +1,9 @@
 formula:
   circuitBreaker:
     rules:
-    - cancelRunningFuture: true
-      effectiveLocation: '*ALL*'
-      effectivePattren: '*ALL_WAY*'
+    - cancelRunningFuture: false
+      effectiveLocation: "*ALL*"
+      effectivePattren: "*ALL_WAY*"
       effectiveType: 1
       enabled: true
       failureRateThreshold: 50
@@ -12,14 +12,9 @@ formula:
       forceOpen: false
       ringBufferSizeInClosedState: 20
       ringBufferSizeInHalfOpenState: 10
-      ruleId: 54
-      serviceName: '*ALL_SERVICE_NAME*'
+      ruleId: 1
+      serviceName: provider-demo
       source:
-        tags:
-        - key: EM_APP
-          op: EQUAL
-          type: SYSTEM
-          value:
-          - app-XZ8dbMgW
+        tags: []
       timeoutDuration: -1
       waitDurationInOpenState: 5000
